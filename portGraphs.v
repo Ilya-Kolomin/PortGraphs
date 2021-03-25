@@ -615,7 +615,7 @@ Theorem is_iso_i_example_1 : ∏ out_ : (setcoprod (underlined 2) (I_or_O boolse
 
 Definition i_boolset : weq (setcoprod (underlined 2) (I_or_O boolset (dirprod_pr2 in_out_boolset))) (setcoprod (underlined 2) (I_or_O boolset (dirprod_pr1 in_out_boolset))).
   unfold weq.
-  unfold I_or_O.**)
+  unfold I_or_O.
 
 
 
@@ -823,3 +823,4 @@ Check pr1 (total2 (fun a1a2 : (dirprod_hSet A1 A2) => paths (t1 (pr1 a1a2)) (s2 
 
 
 Definition graph_mul (V : hSet) {A1 A2 : hSet} {s1 t1 : A1 -> V} {s2 t2 : A2 -> V} := fun (g1 : graph V A1 s1 t1) (g2 : graph V A2 s2 t2) => graph V
+**)
